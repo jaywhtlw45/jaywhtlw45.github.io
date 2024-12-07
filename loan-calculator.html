@@ -9,21 +9,21 @@
     <body>
         <h1>Loan Amortization Calculator</h1>
         <div id="calculator">
-            <label for = "unsubsidized">Unsubsidized Loan Amount:</label>
-            <input type = "number" id="unsubsidized" placeholder="60000"><br>
-
-            <label for = "subsidized">Subsidized Loan Amount</label>
-            <input type = "number" id="subsidized" placeholder="0"><br>
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" placeholder="e.g., 60000"><br>
 
             <label for="interest">Anual Interest Rate (%):</label>
-            <input type="number" id="interest" placeholder="5"><br>
+            <input type="number" id="interest" placeholder=""e.g., 5"><br>
 
             <label for="monthlyPayment">Monthly Payment:</label>
-            <input type="number" id="monthlyPayment" placeholder="1000"><br>
+            <input type="number" id="monthlyPayment" placeholder="e.g., 1000"><br>
+
+            <label for="subsidized">Subsidized Amount:</label>
+            <input type="number" id="unsubsidized" placeholder="e.g., 30000"><br>
 
             <button id ="calculate">calculate</button>
         </div>
         <div id="output"></div>
-        <script defer src="scripts/test.js"></script>
+        <script defer src="scripts/loan_amortization.js"></script>
     </body>
 </html>
