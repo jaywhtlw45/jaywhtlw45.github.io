@@ -1,0 +1,59 @@
+/* Define default (light) theme variables */
+:root {
+    /* Color palette */
+    --color-bg: #f8f9fa;
+    --color-text: #212529;
+    --color-primary: #343a40;
+    --color-accent: #00b4d8;
+    --color-nav-text: #ffffff;
+    --color-muted: #6c757d;
+    --color-hero-bg: #e9ecef;
+
+    /* Typography */
+    --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 16px;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2.5rem;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: var(--font-base);
+    font-size: var(--font-size-base);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none; /* remove underline from hyperlink */
+    color: inherit;
+}
+
+/* Navbar*/
+.navbar{
+    background-color: var(--color-primary);
+    color: var(--color-nav-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-md);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+

@@ -1,5 +1,9 @@
 # jaywhtlw45.github.io
 
+Next Step:
+    CONTINUE WORKING ON CSS
+
+
 Navigation
 - Fixed top scrollbar
 - Smooth Scroll
@@ -16,3 +20,20 @@ Future Projects
 - loan calculator
 - timer
 
+Interests
+- Hiking
+- Riding
+- Mechanics/Motors
+- Construction
+- Nature
+- Building Projects
+- Abstract Problem Solving
+- Chess
+- Programming
+- Family Gatherings/Barbeque
+
+Planned Backgrounds
+- Alta Peak
+- Gorman
+- Holister Hills
+- The Dunes
