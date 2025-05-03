@@ -4,7 +4,8 @@
     --color-bg: #f8f9fa;
     --color-text: #212529;
     --color-primary: #343a40;
-    --color-accent: #00b4d8;
+    --color-accent: #6a3dc5;
+    --color-accent-darker: #532f9a; 
     --color-nav-text: #ffffff;
     --color-muted: #6c757d;
     --color-hero-bg: #e9ecef;
@@ -20,6 +21,7 @@
     --space-sm: 1rem;
     --space-md: 2rem;
     --space-lg: 3rem;
+    /* em would refer to the current font size, not root*/
 }
 
 /* Base Styles */
@@ -50,10 +52,127 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-md); /* to-/bottom, right/left */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
+
+
+/* .logo is descendent class of .navbar */
+.navbar .logo{ 
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style:none;        /* no bullets in list*/
+    display:flex;           /* flexes itmes in the frame accross the screen--very useful and many options here*/
+    gap: var(--space-sm);
+}
+
+.nav-links li a{
+    color: var(--color-nav-text);
+    font: weight 500px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover{
+    color: var(--color-accent);
+}
+
+/* buttons */
+.button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    /* color: white; */
+    background-color: var(--color-accent-darker);
+}
+
+/* Main Content*/
+main{
+    padding-top: 80px;
+    padding: var(--space-md);   
+}
+
+/* Intro Section*/
+.intro, .project-teasers{
+    max-width: 800px;
+    margin: var(space-lg) auto;
+    text-align: center;
+}
+
+.intro h2{
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: var(--space-lg) var(--space-sm);
+    background-color: var(--color-hero-bg);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1{
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.hero-buttons{
+    margin-top: var(--space-sm);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    gap: var(-space-sm)
+}
+
+/* Project Teasers */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: var(--space-sm);
+    text-align: left
+}
+
+.project-list l1 {
+    margin-bottom: var(--space-sm);
+}
+
+.project-teasers h2{
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: var(--space-sm);
+    margin-top: var(--space-md);
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+/* CSS notes
+.className
+#idName
+tagname
+html, body ---> means multiple tags
+*/

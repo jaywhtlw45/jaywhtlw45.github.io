@@ -15,6 +15,7 @@ Design
 - Light/dark toggle
 - Smooth scroll + transitions
 - No autoplaying animations
+- Custom domain on github pages
 
 Future Projects
 - loan calculator
