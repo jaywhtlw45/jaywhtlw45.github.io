@@ -105,17 +105,7 @@ main{
     padding: var(--space-md);   
 }
 
-/* Intro Section*/
-.intro, .project-teasers{
-    max-width: 800px;
-    margin: var(space-lg) auto;
-    text-align: center;
-}
 
-.intro h2{
-    font-size: var(--font-size-lg);
-    color: var(--color-primary);
-}
 
 /* Hero section */
 .hero {
@@ -144,7 +134,37 @@ main{
     gap: var(-space-sm)
 }
 
+/* Container */
+.intro-projects-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Intro Section*/
+.intro {
+    max-width: 800px;
+    margin: var(space-lg) auto;
+    text-align: left;
+    flex: 1;
+}
+
+.intro h2 {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+    text-align: center
+}
+
 /* Project Teasers */
+.project-teasers {
+    max-width: 800px;
+    margin: var(space-lg) auto;
+    text-align: center;
+    flex: 1;
+}
+
 .project-list {
     list-style-type: none;
     padding: 0;
@@ -168,6 +188,23 @@ footer{
     margin-top: var(--space-md);
     color: var(--color-muted);
     font-size: 0.9rem;
+}
+
+.footer-links{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-links a{
+    color: var(--color-muted);
+    font-size: 1.75rem;
+    transition: color 0.3s; 
+}
+
+.footer-links a:hover{
+    color: var(--color-accent);
 }
 
 /* CSS notes

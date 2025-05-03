@@ -1,7 +1,10 @@
 # jaywhtlw45.github.io
 
 Next Step:
-    CONTINUE WORKING ON CSS
+    
+
+Don't Forget:
+- Remove unecessary CSS elements
 
 
 Navigation
