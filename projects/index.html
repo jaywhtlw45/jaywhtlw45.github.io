@@ -30,12 +30,12 @@
     </header>
     <main>
       <section class="projects-preview-section">
-        <div class="preview-image">
-          <img src="/assets/images/brain-tumor.png" alt="Brain Tumors" id="brain-tumor">
-        </div>
+        <!-- <div class="preview-image">
+          <img src="/assets/images/projects/brain-tumor/brain-tumor.png" alt="Brain Tumors" id="brain-tumor">
+        </div> -->
         <ul class="projects-list">
-          <li>
-            <a href="https://github.com/Nerdeee/Brain-Tumor-Classification" data-id="brain-tumor"
+          <li data-bg="/assets/images/backgrounds/brain-tumor.jpg">
+            <a href="https://github.com/Nerdeee/Brain-Tumor-Classification" data-id="brain-tumor" target="_blank" rel="noopener"
               >Brain Tumor Classification</a
             >
           </li>
@@ -66,5 +66,17 @@
         ></a>
       </div>
     </footer>
+
+    <script>
+      const body = document.querySelector("body");
+      const li = document.querySelectorAll(".projects-list li");
+
+      li.forEach(el => {
+        el.addEventListener("mouseover", () => {
+          let bg = el.getAttribute("data-bg");
+          body.style.background = `#000 url(${bg})no-repeat center /cover`;
+        })
+      })
+    </script>
   </body>
 </html>
