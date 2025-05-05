@@ -101,11 +101,10 @@ a {
 
 /* Main Content*/
 main{
-    padding-top: 80px;
-    padding: var(--space-md);   
+    padding-top: var(--space-md);
+    margin-top: 20px;
+    /* padding: var(--space-md);    */
 }
-
-
 
 /* Hero section */
 .hero {
@@ -157,26 +156,33 @@ main{
     text-align: center
 }
 
-/* Project Teasers */
-.project-teasers {
-    max-width: 800px;
-    margin: var(space-lg) auto;
-    text-align: center;
-    flex: 1;
+/* projects*/
+.projects-preview-section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+
 }
 
-.project-list {
+.preview-images{
+    flex:1;
+    position: relative;
+    height: 300px;
+}
+.projects-list {
     list-style-type: none;
     padding: 0;
     margin-top: var(--space-sm);
     text-align: left
 }
 
-.project-list l1 {
+.projects-list l1 {
     margin-bottom: var(--space-sm);
 }
 
-.project-teasers h2{
+.projects-teasers h2{
     font-size: var(--font-size-lg);
     color: var(--color-primary);
 }
@@ -185,7 +191,7 @@ main{
 footer{
     text-align: center;
     padding: var(--space-sm);
-    margin-top: var(--space-md);
+    /* margin-top: var(--space-md); */
     color: var(--color-muted);
     font-size: 0.9rem;
 }
@@ -207,9 +213,13 @@ footer{
     color: var(--color-accent);
 }
 
+/* projectss Page*/
+
 /* CSS notes
 .className
 #idName
 tagname
 html, body ---> means multiple tags
 */
+
+
