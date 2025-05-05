@@ -74,7 +74,9 @@
       li.forEach(el => {
         el.addEventListener("mouseover", () => {
           let bg = el.getAttribute("data-bg");
-          body.style.background = `#000 url(${bg})no-repeat center /cover`;
+          body.style.backgroundImage = `url(${bg})`;
+          body.style.backgroundRepeat = "no-repeat";
+          // body.style.background = `#000 url(${bg})no-repeat center /cover`;
         })
       })
     </script>
