@@ -5,7 +5,7 @@ Next Step:
 
 Don't Forget:
 - Remove unecessary CSS elements
-
+- setup redirect for maintenance
 
 Navigation
 - Fixed top scrollbar

@@ -231,6 +231,16 @@ footer{
     color: var(--color-accent);
 }
 
+.maintenance h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent)
+}
+
+.maintenance p{
+    font-size: 1.2rem;
+    max-width:600px;
+}
 /* projectss Page*/
 
 /* CSS notes
